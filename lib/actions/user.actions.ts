@@ -36,7 +36,7 @@ export async function updateUser({
         }
     );
     if(path==='/profile/edit'){
-        revalidatePath(path)
+     revalidatePath(path)
     }
 }
 catch(error:any){
@@ -48,10 +48,10 @@ throw new Error(`Failed to create/update user: ${error.message}`);
 
 export async function fetchUser(userId:string){
     try{
-        connectToDB();
+       await connectToDB();
         return await User.findOne({
             id:userId
-        })
+        });
         //.populate({
       //  path:'communities',
        // model:'Community'
