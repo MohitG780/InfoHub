@@ -13,7 +13,7 @@ interface Params{
     text,author,communityId,path
      }:Params){
      try{
-       await  connectToDB;
+       await  connectToDB();
       const createThread=await Thread.create({
       text,author,community:null,
      });
@@ -29,7 +29,7 @@ interface Params{
 }
 
 export async function fetchPosts(pageNumber=1,pageSize=20){
-  await connectToDB;
+  await connectToDB();
 
   const skipAmount=(pageNumber-1)*pageSize;
   const postsQuery=Thread.find({parentId:{$in:[null,undefined]}})
@@ -96,7 +96,7 @@ export async function addCommentToThread(
   userId:string,
   path:string
 ){
-  await connectToDB;
+  await connectToDB();
    const originalThread=await Thread.findById(threadId);
   try{
       if(!originalThread){
@@ -105,7 +105,7 @@ export async function addCommentToThread(
   }
   const commentThread=new Thread({
     text:commentText,
-    uthor:userId,
+    author:userId,
     parentId:threadId
   }) 
   const savedCommentthread=await commentThread.save();
