@@ -29,7 +29,7 @@ interface Params{
 }
 
 export async function fetchPosts(pageNumber=1,pageSize=20){
-  connectToDB;
+  await connectToDB;
 
   const skipAmount=(pageNumber-1)*pageSize;
   const postsQuery=Thread.find({parentId:{$in:[null,undefined]}})
@@ -55,7 +55,7 @@ return {posts,isNext}
 }
 
 export async function fetchThreadById(id:string){
-  connectToDB();
+ await connectToDB();
 
   //TODO populate community
   try{
@@ -96,7 +96,7 @@ export async function addCommentToThread(
   userId:string,
   path:string
 ){
-  connectToDB;
+  await connectToDB;
    const originalThread=await Thread.findById(threadId);
   try{
       if(!originalThread){
