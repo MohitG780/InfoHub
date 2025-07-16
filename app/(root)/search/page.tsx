@@ -33,7 +33,7 @@ const Page=async ({params}:{params:{id:string}})=>{
            id={person.id}
            name={person.name}
            username={person.username}
-           imageUrl={person.image}
+           imgUrl={person.image}
            personType='User'
 
 
