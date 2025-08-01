@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import User from "./user.models";
 
 const communitySchema = new mongoose.Schema({
   id: { type: String, required: true },
