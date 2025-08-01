@@ -1,4 +1,4 @@
-"use client";
+
 const Page=async()=>{
     return(
         <section>
