@@ -6,7 +6,8 @@ interface Props{
     name:string,
     username:string,
     imgUrl:string,
-    bio:string
+    bio:string,
+    type?: string;
 
 }
 const ProfileHeader=({ accountId,
@@ -14,7 +15,8 @@ const ProfileHeader=({ accountId,
     name,
     username,
     imgUrl,
-    bio}:Props)=>{
+    bio,type,
+}:Props)=>{
    
 
     return (
