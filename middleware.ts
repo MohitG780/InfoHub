@@ -6,22 +6,12 @@ const isPublicRoute = createRouteMatcher([
   '/sign-up(.*)',
   '/search(.*)',
   '/activity(.*)',
-  '/thread(.*)',
+  '/thread(.*)' // optional, if you want threads to be viewable without login
 ]);
 
 export default clerkMiddleware(async (auth, req) => {
-  try {
-    if (!isPublicRoute(req)) {
-      await auth.protect({
-        unauthorized: () => {
-          console.warn("⛔️ Unauthorized access attempt.");
-          return new Response("Unauthorized", { status: 401 });
-        },
-      });
-    }
-  } catch (error) {
-    console.error("🔥 Clerk middleware crashed:", error);
-    return new Response("Internal middleware error", { status: 500 });
+  if (!isPublicRoute(req)) {
+    await auth.protect();
   }
 });
 
