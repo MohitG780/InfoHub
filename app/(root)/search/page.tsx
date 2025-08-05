@@ -1,3 +1,4 @@
+"use client";
 import ProfileHeader from "@/components/shared/ProfileHeader";
 import {
   fetchUser,
