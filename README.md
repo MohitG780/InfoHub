@@ -1,37 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+InfoHub
+A modern, community-driven discussion platform built with Next.js. Create threads, reply, search, track activity, and manage profiles with a polished, dark-themed UI.
 
-## Getting Started
+Demo
+Local: http://localhost:3000
+<img width="1170" height="796" alt="Screenshot 2025-08-23 at 7 29 21 PM" src="https://github.com/user-attachments/assets/3a179251-3e75-44a3-b5e8-f120ebbfa670" />
+<img width="1176" height="788" alt="Screenshot 2025-08-23 at 7 29 38 PM" src="https://github.com/user-attachments/assets/c4b10a92-22fa-48ea-9b4e-bc27a5a9d526" />
 
-First, run the development server:
+<img width="1166" height="786" alt="Screenshot 2025-08-23 at 7 29 47 PM" src="https://github.com/user-attachments/assets/fed8d59a-589b-4014-b9cf-a25e925d5c43" />
+<img width="1173" height="780" alt="Screenshot 2025-08-23 at 7 29 57 PM" src="https://github.com/user-attachments/assets/07552116-923e-4612-a069-82bd207e3351" />
 
-```bash
+
+
+
+Screens
+Home feed with threads and replies
+
+Search across threads and users
+
+Activity notifications (mentions, replies)
+
+Create Thread flow
+
+Communities listing and detail
+
+User Profile with Threads, Replies, Tagged
+
+Tech Stack
+Next.js (App Router)
+
+TypeScript
+
+React
+
+Styling: CSS/modern utility classes
+
+Font optimization: next/font (Inter)
+
+Getting Started
+Install dependencies
+
+npm install
+
+Run dev server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or: yarn dev / pnpm dev / bun dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in browser
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+http://localhost:3000
 
-## Learn More
+Hot reload is enabled. Edit app/page.tsx and other files to see live updates.
 
-To learn more about Next.js, take a look at the following resources:
+Project Structure
+app/ — Next.js App Router pages, layouts, routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+components/ — Reusable UI components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+lib/ — Helpers, utilities
 
-## Deploy on Vercel
+public/ — Static assets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+styles/ — Global styles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# InfoHub
+Note: Exact folders may vary as the project evolves.
+
+Environment Variables
+If the app integrates with databases or auth providers, create a .env.local at the project root. Example placeholders:
+
+NEXT_PUBLIC_APP_URL=
+
+AUTH_SECRET=
+
+DATABASE_URL=
+
+Do not commit secrets. Add .env.local to .gitignore.
+
+Scripts
+dev: Start dev server
+
+build: Production build
+
+start: Run production server
+
+lint: Lint codebase
+
+Deployment
+The simplest path is Vercel:
+
+Push to GitHub
+
+Import the repo in Vercel
+
+Configure environment variables
+
+Deploy
+
+Contributing
+Fork the repo
+
+Create a feature branch
+
+Commit changes with clear messages
+
+Open a pull request with a concise description
+
