@@ -3,16 +3,15 @@ A modern, community-driven discussion platform built with Next.js. Create thread
 
 Demo
 Local: http://localhost:3000
-<img width="1170" height="796" alt="Screenshot 2025-08-23 at 7 29 21 PM" src="https://github.com/user-attachments/assets/3a179251-3e75-44a3-b5e8-f120ebbfa670" />
-<img width="1176" height="788" alt="Screenshot 2025-08-23 at 7 29 38 PM" src="https://github.com/user-attachments/assets/c4b10a92-22fa-48ea-9b4e-bc27a5a9d526" />
-
-<img width="1166" height="786" alt="Screenshot 2025-08-23 at 7 29 47 PM" src="https://github.com/user-attachments/assets/fed8d59a-589b-4014-b9cf-a25e925d5c43" />
-<img width="1173" height="780" alt="Screenshot 2025-08-23 at 7 29 57 PM" src="https://github.com/user-attachments/assets/07552116-923e-4612-a069-82bd207e3351" />
 
 
+<img width="1005" height="600" alt="Screenshot 2026-04-06 at 7 02 31 PM" src="https://github.com/user-attachments/assets/21965657-135e-4473-b2d3-d3e2a675db4d" />
 
+<img width="1029" height="590" alt="Screenshot 2026-04-06 at 7 02 58 PM" src="https://github.com/user-attachments/assets/310bd5c3-c8a2-4ce3-b7a7-b585505f3388" />
+<img width="1038" height="599" alt="Screenshot 2026-04-06 at 7 03 08 PM" src="https://github.com/user-attachments/assets/d252a980-8eff-4dd3-89ca-918c51ea568c" />
 
-Screens
+Screens<img width="1048" height="593" alt="Screenshot 2026-04-06 at 7 03 17 PM" src="https://github.com/user-attachments/assets/0b0465ad-987a-4481-85e4-99797f326b9f" />
+
 Home feed with threads and replies
 
 Search across threads and users
